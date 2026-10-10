@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales Performance Dashboard — Portfolio</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<!-- All page styling lives in styles.css -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="https://github.com/SyedHussainwasti">&larr; All my projects</a>
+  <h1>Sales Performance Dashboard</h1>
+  <p class="sub">Interactive summary of 2024 sales by product and region. Built in Excel with PivotTables, filters, and charts — recreated here so you can explore it in the browser.</p>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grid">
+    <div class="panel"><h3>Monthly revenue trend</h3><canvas id="cMonthly" height="220"></canvas></div>
+    <div class="panel"><h3>Revenue by product</h3><canvas id="cProduct" height="220"></canvas></div>
+    <div class="panel"><h3>Revenue by region</h3><canvas id="cRegion" height="220"></canvas></div>
+    <div class="panel"><h3>Monthly summary</h3><div style="overflow-x:auto"><table id="tMonthly"></table></div></div>
+  </div>
+
+  <div class="dl">
+    <strong>Want the original workbook?</strong><br>
+    The downloadable Excel file contains the same dataset with native Excel charts, auto-filters, SUMIFS formulas, and conditional formatting.
+    <br><a class="btn" href="files/sales-dashboard.xlsx" download>Download sales-dashboard.xlsx</a>
+  </div>
+</div>
+
+<!-- All page data and logic lives in app.js -->
+<script src="app.js"></script>
+</body>
+</html>
